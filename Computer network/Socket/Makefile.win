@@ -1,0 +1,29 @@
+# Project: client
+# Makefile created by Dev-C++ 5.4.0
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = client.o $(RES)
+LINKOBJ  = client.o $(RES)
+LIBS     = -L"D:/programming/work/c/tools/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc
+INCS     = -I"D:/programming/work/c/tools/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"D:/programming/work/c/tools/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/include"
+BIN      = client.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+client.o: client.cpp
+	$(CPP) -c client.cpp -o client.o $(CXXFLAGS)
