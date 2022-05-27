@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+#忽略所有.svn目录
+ppt/
+doc/
