@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-# @Date    : 2022/5/14  16:16
-# @Author  : Sail
-
 import os
 import time
 
