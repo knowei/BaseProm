@@ -1,6 +1,6 @@
 import os
 import time
-
+# 使用pip 下载 selenium, scrapy, docx, pptx, cv2库包
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from scrapy import Selector
@@ -14,14 +14,17 @@ import cv2
 from pptx import Presentation
 from pptx.util import Inches
 
+# 需要下载 chromedriver
 #dows是的chromedriver
 chromedriver_path = "C:\Program Files\Python3101\chromedriver.exe"
-#用ubuntu的chromedriver
+# 用ubuntu的chromedriver(服务器windows忽略即可)
 # chromedriver_path = "./chromedriver"
 
+# 文档和ppt分别保存在不同的文件夹里
 doc_dir_path = "./doc"
 ppt_dir_path = "./ppt"
 
+# 随便写一个百度文库的链接即可
 url = 'https://wenku.baidu.com/view/2f4d98721837f111f18583d049649b6648d709bd.html' #
 
 
@@ -172,12 +175,6 @@ class StartChrome():
         # 把图片统一缩放最大的尺寸
         for img_path_one in img_path_list:
             cv2.imwrite(img_path_one,cv2.resize(cv2.imread(img_path_one),(img_shape_max[1],img_shape_max[0])))
-        # img_shape_path = img_path_list[0]
-        # 获得图片的尺寸
-        # img_shape = cv2.imread(img_shape_path).shape
-        # 把像素转换为ppt中的长度单位emu,默认dpi是720
-        # 1厘米=28.346像素=360000
-        # 1像素 = 12700emu
         print(img_shape_max,'------------------------')
         prs.slide_width = img_shape_max[1] * 12700  # 换算单位
         prs.slide_height = img_shape_max[0] * 12700
