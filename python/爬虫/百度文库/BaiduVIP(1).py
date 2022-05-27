@@ -21,18 +21,6 @@ chromedriver_path = "C:\Program Files\Python3101\chromedriver.exe"
 
 doc_dir_path = "./doc"
 ppt_dir_path = "./ppt"
-#url = "https://wenku.baidu.com/view/4410199cb0717fd5370cdc2e.html?fr=search"# doc_txt p
-#url = "https://wenku.baidu.com/view/4d18916f7c21af45b307e87101f69e314332fa36.html" # doc_txt span
-# url = "https://wenku.baidu.com/view/dea519c7e53a580216fcfefa.html?fr=search" # doc_txt span br
-# url = 'https://wk.baidu.com/view/062edabeb6360b4c2e3f5727a5e9856a5712262d?pcf=2&bfetype=new' # doc_img
-# url = "https://wenku.baidu.com/view/2af6de34a7e9856a561252d380eb6294dd88228d"# vip限定doc
-#url = "https://wenku.baidu.com/view/3de365cc6aec0975f46527d3240c844769eaa0aa.html?fr=search" #ppt
-# url = "https://wenku.baidu.com/view/18a8bc08094e767f5acfa1c7aa00b52acec79c55"#pdf
-# url = "https://wenku.baidu.com/view/bbe27bf21b5f312b3169a45177232f60dccce772"
-# url = "https://wenku.baidu.com/view/5cb11d096e1aff00bed5b9f3f90f76c660374c24.html?fr=search"
-# url = "https://wenku.baidu.com/view/71f9818fef06eff9aef8941ea76e58fafab045a6.html"
-# url = "https://wenku.baidu.com/view/ffc6b32a68eae009581b6bd97f1922791788be69.html"
-#url = "https://wenku.baidu.com/view/d4d2e1e3122de2bd960590c69ec3d5bbfd0adaa6.html"
 
 url = 'https://wenku.baidu.com/view/2f4d98721837f111f18583d049649b6648d709bd.html' #
 
